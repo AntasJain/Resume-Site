@@ -1,66 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Site</title>
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@600&family=Sacramento&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="top-container">
-      <img class="cloud1" src="images/cloud.png" alt="cloud-img" />
-      <h1>I'm Antas.</h1>
-      <h2 class="one-line-intro">An <span class="pro">Android Application</span> Developer</h2>
-      <img class="cloud2" src="images/cloud.png" alt="cloud-img" />
-      <img src="images/mountain.png" alt="mountain" />
-    </div>
-    <div class="middle-container">
-      <div class="profile">
-        <img id="dp" src="images/antas.JPG" alt="profile-pic" />
-        <h2>Hello.</h2>
-        <p class="intro">
-          I love writing code, developing applications, learning new technologies and solving real world problems using those technologies. Currently learning web development, hence this site.
-        </p>
-      </div>
-      <hr />
-      <div class="skills">
-        <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="skill_1_img" width="25%" src="https://www.pikpng.com/pngl/b/564-5649155_java-comments-java-programming-language-logo-clipart.png" alt="" />
-          <h3>Core java programming</h3>
-          <p>
-            I started learning java in my 8th standard, I have practised the concepts of Java and Object Oriented Programming for about 6 years now, I have apt knowledge in Core Java, including, Collection Framework, Multithreading and Exception Handling.
-          </p>
-        </div>
-        <div class="skill-row">
-          <img class="skill_2_img" width="25%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Android_Studio_Icon_%282014-2019%29.svg/1200px-Android_Studio_Icon_%282014-2019%29.svg.png" alt="" />
-          <h3>Android Application Development</h3>
-          <p>
-           I started developing Android Applications in my 10th Standard, Using Java and Android Studio IDE, XML for Layouts. Since then I have developed various android applications.
-          </p>
-        </div>
-      </div>
-      <hr />
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3 class="contact-msg">If you love developing applications as much as I do</h3>
-        <p class="contact-msg">
-          Want to Collaborate/ Hire me for Application Dvelopment?
-        </p>
-        <a class="btn" href="mailto:jainantas.99@gmail.com">CONTACT ME</a>
-      </div>
-    </div>
+body {
+  margin: 0;
+  color: #40514e;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+.one-line-intro{
+    font-size: 1.5em;
+}
+div {
+  margin: 0px;
+}
+h1 {
+  margin: 50px auto 0 auto;
+  color: #66bfbf;
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem;
+}
+h2 {
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-size: "Montserrat", sans-serif;
+  color: #11999e;
+}
+.top-container {
+  padding-top: 100px;
+  background-color: #e4f9f5;
+  position: relative;
+}
+.middle-container {
+  margin: 100px 0;
+}
+.bottom-container {
+  padding: 50px 0 20px;
+  background-color: #66bfbf;
+}
+.pro {
+  text-decoration: underline;
+}
+.cloud2 {
+  position: absolute;
+  left: 250px;
+  bottom: 300px;
+}
+.cloud1 {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+a {
+  text-decoration: none;
+  margin: 10px 20px;
+  color: #11999e;
+  font-family: "Montserrat", sans-serif;
+}
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+.skill_1_img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+.skill_2_img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+hr {
+  border-color: #eaf6f6;
+  border-width: 5px;
+  border-style: none;
+  border-top-style: dotted;
+  width: 4%;
+  margin: 100px auto;
+}
+#dp {
+  border-radius: 100%;
+}
+.intro {
+  width: 40%;
+  margin: auto;
+}
+p {
+  line-height: 2;
+}
+.contact-msg {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+.btn {
+  font-family: "Montserrat", sans-serif;
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
 
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/in/antas-jain">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/antasJain">Twitter</a>
-      <a class="footer-link" href="https://www.github.com/AntasJain/">Github</a>
-      <p class="cc">© 2021 Antas Jain.</p>
-    </div>
-  </body>
-</html>
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+.cc {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+a:hover {
+  color: #eaf6f6;
+}
